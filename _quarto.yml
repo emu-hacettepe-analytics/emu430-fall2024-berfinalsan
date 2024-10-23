@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student/Group Full Name]'s Analytics Lab"
+  title: "Berfin Alsan's Analytics Lab"
   navbar:
     search: true
     left:
@@ -22,11 +22,9 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/emu-hacettepe-analytics/emu430-fall2024-berfinalsan
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://www.linkedin.com/in/berfin-alsan-7ab367254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BErWP%2BGmeQI%2B68MqOun%2BAnw%3D%3D
 
   sidebar:
     - title: "Assignments"
