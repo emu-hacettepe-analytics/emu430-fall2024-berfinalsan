@@ -1,12 +1,10 @@
 ---
-title: "Welcome to My Analytics Lab"
+title: "Welcome to Berfin's Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is xxx xxxx.
+Hello! My name is Berfin Alsan.
 
 This is my personal webpage.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
-
-This is our template.
