@@ -15,7 +15,6 @@ sidebar: false
 
 1.  Coca-Cola İçecek A.Ş., Supply Chain Intern, 01.07.2024-29.08.2024
 
-
 # Projects
 
 UM2Y Mathematical Modeling Competition

@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to My Analytics Lab",
+    "title": "Welcome to Berfin’s Analytics Lab",
     "section": "",
-    "text": "Hello! My name is xxx xxxx.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\nThis is our template.\n\n\n\n Back to top"
+    "text": "Hello! My name is Berfin Alsan.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
   },
   {
     "objectID": "assignments/assignment-2.html",
@@ -25,28 +25,31 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing."
+    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 2021 - ongoing."
   },
   {
     "objectID": "about.html#employements",
     "href": "about.html#employements",
     "title": "About Me",
     "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy"
+    "text": "Employements"
   },
   {
     "objectID": "about.html#internships",
     "href": "about.html#internships",
     "title": "About Me",
     "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
+    "text": "Internships\n\nCoca-Cola İçecek A.Ş., Supply Chain Intern, 01.07.2024-29.08.2024"
   },
   {
     "objectID": "assignments/assignment-1.html",
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
+    "text": "My first assigment has two parts:\n\n\nHere is the video I have watched: [Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir] (https://www.youtube.com/watch?v=tV_0pHSdLAM&ab_channel=ErdiDasdemir)\nSummary\nFirst, Baykal Hafızoğlu introduced himself, sharing details about his academic background, work experience, and personal interests. He discussed various projects he had been involved in and mentioned that he was both the creator and developer of a program called Supply Chain Solver. Next, he delved into the world of data analytics, breaking it down into four categories: Descriptive, Diagnostic, Predictive, and Prescriptive. He even likened Prescriptive Analytics to a doctor writing a prescription. He linked these categories of analytics to industrial engineering courses, highlighting the significance of understanding these connections. Then, he discussed analytical methods and solutions, offering examples from daily life to illustrate analytical approaches. He also shared insights from his experiences, recommending that one should always begin by clearly defining the problem. Furthermore, he suggested revisiting the original problem definition after completing the work to ensure clarity. Lastly, he answered questions from students.\n\n\n\nMultiple choice question:\n1) What are the 4 main headings of looking at the world of analytics?\n\nDescriptive, Diagnostic, Statistical, Operational\nPredictive, Prescriptive, Diagnostic, Descriptive\nQuantitative, Qualitative, Descriptive, Predictive\nOperational, Prescriptive, Statistical, Predictive\n\nAnswer: B\nOpen-ended question:\n2) In predictive analytics, when are simulation, regression, machine learning, and clustering techniques preferred, and what advantages does each provide?\nAnswer: Simulation, regression, machine learning, and clustering are preferred in predictive analytics under different circumstances: Simulation: Ideal for testing potential future scenarios. Regression: Shapes predictions by analyzing relationships between variables. Machine Learning: Increases prediction accuracy in large datasets. Clustering: Supports analyses like customer segmentation by identifying similar groups. Each technique enhances the effectiveness of analyses in specific contexts.\n\n\n\nIn the second part of the assignment, I have completed some tasks:\n\nImport the “polls_us_election_2016” data set from the dslabs package.\n\n’’‘{r chunk_1} library(dslabs) data(“polls_us_election_2016”)’’’\n\nDisplay the first 10 rows of the data set.\n\n’’‘{r chunk_2} first_ten_row &lt;- head(polls_us_election_2016,10) print(first_ten_row)’’’\n\nCalculate and display the total number of NA values in the entire data set.\n\n’’‘{r} total_na &lt;- sum(is.na(polls_us_election_2016)) total_na’’’\n\nReplace all NA values in the “polls_us_election_2016” data set as follows: For numeric columns, replace NA values with your birth year. For character or factor columns, replace NA values with your first name. Store the modified data set as a new object.Print the first ten rows of the new data frame.\n\n’’’{r} birth_year &lt;- 2003 first_name &lt;- “Berfin”\nno_nas_data &lt;- polls_us_election_2016\nfor (col in names(no_nas_data)) { # Convert factor columns to character to prevent coercion issues. if (is.factor(no_nas_data[[col]])) { no_nas_data[[col]] &lt;- as.character(no_nas_data[[col]]) } # Check if the column is numeric. if (is.numeric(no_nas_data[[col]])) { # Replace NA values with the birth year. no_nas_data[[col]] &lt;- ifelse(is.na(no_nas_data[[col]]), birth_year, no_nas_data[[col]]) # Check if the column is character or already a character (after conversion). } else if (is.character(no_nas_data[[col]])) { # Replace NA values with the first name. no_nas_data[[col]] &lt;- ifelse(is.na(no_nas_data[[col]]), first_name, no_nas_data[[col]]) } # No need for an else statement since we do nothing for other column types }\nnew_first_ten_row &lt;- head(no_nas_data, 10) new_first_ten_row ’’’\n\nPrint the total number of NAs remaining in the new data frame.\n\n’’‘{r} total_na&lt;-sum(is.na(no_nas_data)) total_na’’’",
+    "crumbs": [
+      "Assignment 1"
+    ]
   },
   {
     "objectID": "assignments.html",
@@ -61,5 +64,35 @@
     "title": "My Blog",
     "section": "",
     "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a",
+    "href": "assignments/assignment-1.html#a",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Here is the video I have watched: [Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir] (https://www.youtube.com/watch?v=tV_0pHSdLAM&ab_channel=ErdiDasdemir)\nSummary\nFirst, Baykal Hafızoğlu introduced himself, sharing details about his academic background, work experience, and personal interests. He discussed various projects he had been involved in and mentioned that he was both the creator and developer of a program called Supply Chain Solver. Next, he delved into the world of data analytics, breaking it down into four categories: Descriptive, Diagnostic, Predictive, and Prescriptive. He even likened Prescriptive Analytics to a doctor writing a prescription. He linked these categories of analytics to industrial engineering courses, highlighting the significance of understanding these connections. Then, he discussed analytical methods and solutions, offering examples from daily life to illustrate analytical approaches. He also shared insights from his experiences, recommending that one should always begin by clearly defining the problem. Furthermore, he suggested revisiting the original problem definition after completing the work to ensure clarity. Lastly, he answered questions from students.",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#questions",
+    "href": "assignments/assignment-1.html#questions",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Multiple choice question:\n1) What are the 4 main headings of looking at the world of analytics?\n\nDescriptive, Diagnostic, Statistical, Operational\nPredictive, Prescriptive, Diagnostic, Descriptive\nQuantitative, Qualitative, Descriptive, Predictive\nOperational, Prescriptive, Statistical, Predictive\n\nAnswer: B\nOpen-ended question:\n2) In predictive analytics, when are simulation, regression, machine learning, and clustering techniques preferred, and what advantages does each provide?\nAnswer: Simulation, regression, machine learning, and clustering are preferred in predictive analytics under different circumstances: Simulation: Ideal for testing potential future scenarios. Regression: Shapes predictions by analyzing relationships between variables. Machine Learning: Increases prediction accuracy in large datasets. Clustering: Supports analyses like customer segmentation by identifying similar groups. Each technique enhances the effectiveness of analyses in specific contexts.",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#b",
+    "href": "assignments/assignment-1.html#b",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "In the second part of the assignment, I have completed some tasks:\n\nImport the “polls_us_election_2016” data set from the dslabs package.\n\n’’‘{r chunk_1} library(dslabs) data(“polls_us_election_2016”)’’’\n\nDisplay the first 10 rows of the data set.\n\n’’‘{r chunk_2} first_ten_row &lt;- head(polls_us_election_2016,10) print(first_ten_row)’’’\n\nCalculate and display the total number of NA values in the entire data set.\n\n’’‘{r} total_na &lt;- sum(is.na(polls_us_election_2016)) total_na’’’\n\nReplace all NA values in the “polls_us_election_2016” data set as follows: For numeric columns, replace NA values with your birth year. For character or factor columns, replace NA values with your first name. Store the modified data set as a new object.Print the first ten rows of the new data frame.\n\n’’’{r} birth_year &lt;- 2003 first_name &lt;- “Berfin”\nno_nas_data &lt;- polls_us_election_2016\nfor (col in names(no_nas_data)) { # Convert factor columns to character to prevent coercion issues. if (is.factor(no_nas_data[[col]])) { no_nas_data[[col]] &lt;- as.character(no_nas_data[[col]]) } # Check if the column is numeric. if (is.numeric(no_nas_data[[col]])) { # Replace NA values with the birth year. no_nas_data[[col]] &lt;- ifelse(is.na(no_nas_data[[col]]), birth_year, no_nas_data[[col]]) # Check if the column is character or already a character (after conversion). } else if (is.character(no_nas_data[[col]])) { # Replace NA values with the first name. no_nas_data[[col]] &lt;- ifelse(is.na(no_nas_data[[col]]), first_name, no_nas_data[[col]]) } # No need for an else statement since we do nothing for other column types }\nnew_first_ten_row &lt;- head(no_nas_data, 10) new_first_ten_row ’’’\n\nPrint the total number of NAs remaining in the new data frame.\n\n’’‘{r} total_na&lt;-sum(is.na(no_nas_data)) total_na’’’",
+    "crumbs": [
+      "Assignment 1"
+    ]
   }
 ]
