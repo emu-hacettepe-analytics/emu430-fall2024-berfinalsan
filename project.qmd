@@ -5,7 +5,7 @@ sidebar: false
 
 I'm honored to be a member of the **ANALYTICA** project team.
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [Analytica's Project Lab](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-analytica/){.btn .btn-danger style="color: white"}
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to [Analytica's Project Lab](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-analytica/)
 
 **Summary**
 
